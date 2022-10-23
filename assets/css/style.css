@@ -1,0 +1,103 @@
+:root {
+    --color-flame-orange:#eb5e28;
+    --color-errie-black:#252422;
+    --color-black-olive:#403d39;
+    --color-pale-silver:#ccc5b9;
+    --color-floral-white:#fffcf2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: var(--customcolor);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+nav a:hover {
+    background-color: #fff;
+  }
+
+
+
+  header {
+
+    padding: 40px;
+    text-align: center;
+  }
+  
+
+
+body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+/* main {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+main {
+    flex: 1;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 300px;
+    transform: rotate(8deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+  }
+
+.mini-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+
+  
