@@ -93,8 +93,11 @@ main {
 .card {
     display: flex;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  
+
 .card-image {
     width: 100%;
     max-width: 300px;
@@ -104,7 +107,45 @@ main {
     margin-left: 3%;
     flex: 0 0 60%;
   }
+
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left:100px;
+    align-items: flex-start;
+    margin: 0px 0px 100px;
+
+  }
+
+.portfolio-items {
+    display: inline-block;
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    background: var(--color-pale-silver);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 12px;
+    height: 10vh;
+
+
+  }
   
+  .portfolio-items:first-child {
+    height: 20vh;
+    width: 20vw;
+  }
+  
+  .portfolio-items:not(:first-child) {
+    flex: 1;
+
+  }
+
+
+
+
 @media screen and (max-width: 768px) {
     main,
     nav,
