@@ -56,6 +56,7 @@ nav a {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     border-bottom: 4px solid white;
+    color: var(--color-black-olive);
   }
 
 nav a:hover {
